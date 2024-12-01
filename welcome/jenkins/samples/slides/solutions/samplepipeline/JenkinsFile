@@ -21,7 +21,8 @@ pipeline {
                 dir("${PROJECT_HOME}") {
                     script {
                         // Install virtualenv if not available
-                        sh '''#!/bin/bash
+                        '''
+                        sh #!/bin/bash
                         if ! command -v virtualenv &> /dev/null; then
                             echo "Installing virtualenv..."
                             pip install virtualenv
