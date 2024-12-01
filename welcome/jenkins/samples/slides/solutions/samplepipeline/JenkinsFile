@@ -78,7 +78,6 @@ pipeline {
 
         stage('Hello world') {
             steps {
-                parallel{}
                     script {
                         // Run Flask app within the virtual environment
                         echo "Hello world" & sleep 10
