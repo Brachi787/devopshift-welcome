@@ -71,7 +71,8 @@ pipeline {
                         echo "Starting Flask application on 0.0.0.0:5005..."
                         nohup flask run --host=0.0.0.0 --port=5005 > flask_app.log 2>&1 &
                         '''
-                    }}
+                    }
+                    }
                 }
             }
      
@@ -79,7 +80,6 @@ pipeline {
         stage('Hello world') {
             steps {
                     script {
-                        // Run Flask app within the virtual environment
                         echo "Hello world" & sleep 10
                     }
                  }
